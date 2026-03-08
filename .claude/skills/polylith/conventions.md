@@ -1,10 +1,10 @@
 ---
-description: Clojure naming conventions based on Stuart Sierra's principles for Polylith components
+description: Clojure naming conventions for functions, predicates, constructors, and accessors
 ---
 
 # Clojure Naming Conventions
 
-Based on Stuart Sierra's principles. Names describe *what*, not *how*.
+Names describe *what*, not *how*.
 
 ## Pure Functions — Use Nouns
 

@@ -137,7 +137,7 @@ Tests live in the component alongside source. Test the interface, not internals:
 
 ## CLAUDE.md for Polylith Projects
 
-A minimal `CLAUDE.md` at the workspace root gives Claude Code the structure it needs:
+A `CLAUDE.md` at the workspace root with your component list and test command:
 
 ```markdown
 # Project Name

@@ -11,8 +11,8 @@ context:
 
 # Polylith Architecture
 
-Polylith is a component-based monorepo architecture for Clojure. All code lives in one
-repository, organized into isolated bricks that communicate through declared interfaces.
+Polylith is a monorepo architecture for Clojure. Components, bases, and projects live in
+one repository. Components communicate only through declared interface namespaces.
 
 ## Workspace Structure
 
@@ -103,10 +103,10 @@ The interface namespace re-exports only what consumers should see:
 - Circular dependencies between components are not allowed
 - `clojure -M:poly check` enforces all these rules
 
-## Key Insight: Interface Swappability
+## Interface Swappability
 
-Multiple components can implement the same interface. This is how Polylith achieves
-substitutability without runtime polymorphism:
+Multiple components can implement the same interface path. Projects pick which
+implementation to include — consumer code never changes:
 
 - `postgres-db` and `sqlite-db` both implement the `db` interface
 - Different projects include whichever implementation they need

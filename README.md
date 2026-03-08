@@ -8,7 +8,7 @@ Gives Claude Code accurate knowledge of:
 - Dependency rules between bricks
 - Common `poly` CLI commands
 - Cross-platform `.cljc` patterns
-- Stuart Sierra Clojure naming conventions
+- Clojure naming conventions
 
 ## Install
 
@@ -45,7 +45,7 @@ Load the polylith skill when working in this repository.
 | File | Contents |
 |------|----------|
 | `SKILL.md` | Core architecture rules and workspace structure |
-| `conventions.md` | Clojure naming conventions (Stuart Sierra style) |
+| `conventions.md` | Clojure naming conventions |
 | `commands.md` | `poly` CLI and common workflow commands |
 | `patterns.md` | Interface pattern, component creation, `.cljc` usage |
 
