@@ -75,14 +75,15 @@ Use reader conditionals for platform-specific code:
      :cljs (.getTime (js/Date.))))
 ```
 
-For imports:
+Reader conditionals are only needed when the imports actually differ between platforms:
 
 ```clojure
 (ns com.example.my-component.core
   (:require
-    #?(:clj  [clojure.string :as str]
-       :cljs [clojure.string :as str])
-    [com.example.other.interface :as other]))
+    [clojure.string :as str]                        ; same on both — no conditional needed
+    [com.example.other.interface :as other]
+    #?(:clj  [clojure.java.io :as io]               ; platform-specific — needs conditional
+       :cljs [cljs.reader :as reader])))
 ```
 
 Platform-only files use `.clj` or `.cljs` extensions instead of `.cljc`.
@@ -154,4 +155,4 @@ Load the polylith skill for architecture rules and conventions.
 clojure -M:poly test
 ```
 
-Combine with the polylith skill for complete context.
+List your components so Claude can navigate without guessing.

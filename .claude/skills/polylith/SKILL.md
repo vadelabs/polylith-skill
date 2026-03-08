@@ -41,7 +41,20 @@ workspace/
         └── deps.edn       ← lists which components + bases to include
 ```
 
-The top namespace is defined in `workspace.edn` under `:top-namespace`.
+A typical `workspace.edn`:
+
+```clojure
+{:top-namespace "com.example"
+ :interface-ns "interface"
+ :default-profile-name "default"
+ :compact-views #{}
+ :vcs {:name "git"
+       :auto-add false}
+ :tag-patterns {:stable "stable-*"
+                :release "v[0-9]*"}}
+```
+
+The top namespace drives all brick namespace paths.
 
 ## Three Brick Types
 

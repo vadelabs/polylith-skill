@@ -36,8 +36,8 @@ Functions that perform I/O, write to state, or make network calls.
 
 ```clojure
 (defn valid? [x] ...)
-(defn empty? [coll] ...)
 (defn authenticated? [session] ...)
+(defn in-stock? [product] ...)
 ```
 
 ## Don't Repeat the Namespace
