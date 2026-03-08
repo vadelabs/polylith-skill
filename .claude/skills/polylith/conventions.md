@@ -1,3 +1,7 @@
+---
+description: Clojure naming conventions based on Stuart Sierra's principles for Polylith components
+---
+
 # Clojure Naming Conventions
 
 Based on Stuart Sierra's principles. Names describe *what*, not *how*.

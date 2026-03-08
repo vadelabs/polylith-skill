@@ -1,6 +1,13 @@
+---
+description: Polylith poly CLI command reference for workspace inspection, validation, and brick creation
+---
+
 # Polylith CLI Commands
 
 The `poly` tool is invoked via a Clojure alias (typically `:poly`).
+
+> **Note**: Many projects wrap poly commands in Babashka tasks (e.g., `bb check`,
+> `bb info`). Check the project's `bb.edn` for available aliases.
 
 ## Workspace Inspection
 

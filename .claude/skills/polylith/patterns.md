@@ -1,3 +1,7 @@
+---
+description: Common Polylith implementation patterns for interfaces, cross-platform code, dependencies, and tests
+---
+
 # Common Polylith Patterns
 
 ## The Interface Pattern

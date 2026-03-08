@@ -4,6 +4,9 @@ description: >
   Polylith component architecture for Clojure. Load when working in a Polylith
   workspace (workspace.edn present), creating or modifying components, bases,
   or interfaces, or when asked about Polylith structure and conventions.
+user-invocable: true
+context:
+  - conventions.md
 ---
 
 # Polylith Architecture
@@ -98,7 +101,8 @@ substitutability without runtime polymorphism:
 
 ---
 
-See also:
-- `conventions.md` — Clojure naming conventions
-- `commands.md` — poly CLI reference
-- `patterns.md` — common implementation patterns
+## Supporting References
+
+- Read `conventions.md` when naming functions, namespaces, or reviewing naming choices
+- Read `commands.md` when running poly CLI commands or creating/validating bricks
+- Read `patterns.md` when creating new components, writing interfaces, or setting up tests
